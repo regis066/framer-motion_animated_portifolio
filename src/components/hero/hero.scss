@@ -2,8 +2,7 @@
     height: calc(100vh - 100px);
     background: linear-gradient(180deg, #0c0c1d, #111132);
     position: relative;
-
-
+    overflow: hidden;
     .wrapper{
         max-width: 1366px;
         height: 100%;
@@ -55,6 +54,8 @@
             bottom: -120px;
             color: #ffffff09;
             white-space: nowrap;
+            width: 50%;
+            font-weight: bold;
         }
     }
 }
