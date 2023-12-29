@@ -72,7 +72,7 @@ const Portifolio = () => {
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (
-        <Single item={item} key={item} />
+        <Single item={item} key={item.id} />
       ))}
     </div>
   );

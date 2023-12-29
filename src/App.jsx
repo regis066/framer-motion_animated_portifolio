@@ -2,12 +2,14 @@ import './app.scss'
 import Navbar from './components/Navbar/Navbar';
 import Parallax from './components/Parallax/Parallax';
 import Contact from './components/contacts/Contact';
+import Cursor from './components/cursor/Cursor';
 import Hero from './components/hero/Hero';
 import Portifolio from './components/portifolio/Portifolio';
 import Services from './components/services/Services';
 const App = () => {
   return (
     <div>
+      <Cursor />
       <section id='Homepage'>
         <Navbar />
         <Hero />
