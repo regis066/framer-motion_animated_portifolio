@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .hero{
     height: calc(100vh - 100px);
     background: linear-gradient(180deg, #0c0c1d, #111132);
@@ -7,6 +9,9 @@
         max-width: 1366px;
         height: 100%;
         margin: auto;
+
+
+
         .textContainer{
             width: 50%;
             height: 100%;
@@ -15,15 +20,30 @@
             justify-content: center;
             gap: 40px;
 
+            @include mobile{
+                height: 50%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+            }
+            
+            h1{
+                font-size: 80px;
+
+                @include mobile{
+                    font-size: 36px;
+            }
+            }
             h2{
                 font-size: 30px;
                 color: rebeccapurple;
                 letter-spacing: 10px;
             }
-            h1{
-                font-size: 80px;
-            }
             .buttons{
+                @include mobile{
+                    display: flex;
+                }
                 button{
                     padding: 20px;
                     border: 1px solid white;
@@ -33,6 +53,11 @@
                     margin-right: 20px;
                     cursor: pointer;
                     font-weight: 300;
+
+                    
+                    @include mobile{
+                    font-size: 16px;
+                    }
                 }
             }
             img{
@@ -44,8 +69,22 @@
             position: absolute;
             top: 0;
             right: 0;
+
+            @include mobile{
+                height: 50%;
+                width: 100%;
+                top: unset;
+                bottom: 0;
+            }
+
             img{
                 height: calc(100vh - 100px);
+                width: 100%;
+                object-fit: contain;
+
+                @include mobile {
+                    height: 100%;
+                }
             }
         }
         .slidingTextContainer{

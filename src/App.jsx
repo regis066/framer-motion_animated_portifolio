@@ -10,20 +10,20 @@ const App = () => {
   return (
     <div>
       <Cursor />
-      <section id='Homepage'>
+      <section id="Homepage">
         <Navbar />
         <Hero />
       </section>
-      <section id='Services'>
+      <section id="Services">
         <Parallax type="services" />
       </section>
       <section>
         <Services />
       </section>
-      <section id='Portifolio'>
+      <section id="Portifolio">
         <Parallax type="portifolio" />
       </section>
-        <Portifolio />
+      <Portifolio />
       <section id='Contact'>
         <Contact />
       </section>

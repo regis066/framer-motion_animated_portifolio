@@ -48,7 +48,7 @@ const Services = () => {
             <motion.b whileHover={{ color: "orange" }}>For Your </motion.b>
             Business.
           </h1>
-          <button>WHAT DO WE DO ?</button>
+          <button>WHAT WE DO ?</button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
